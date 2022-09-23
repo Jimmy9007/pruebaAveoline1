@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AVEOLINE</title>
+    <meta content="IE=edge" http-equiv="x-ua-compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <link href="public/css/styles.css" rel="stylesheet">
+    <link href="public/css/bootstrap.css" rel="stylesheet">
+    <link href="public/css/font-awesome.min.css" rel="stylesheet">
+    <link href="public/css/sweetalert2.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Item1<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Item2</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <p>COPIE Y PEGUE ESTE NUMERO DE GUIA EN EL FORMULARIO: <b>764100140016</b></p>
+    <form class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="guia" class="col-sm-2 col-form-label">GUIA: </label>
+            <input type="number" class="form-control" id="guia" name="guia" required>
+        </div>
+        <button type="button" class="btn btn-success mb-2" onclick="enviarGuia();"><i class="fa fa-search"></i>
+            BUSCAR</button>
+    </form>
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="table-responsive">
+                    <table class="table table-dark">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th class="centered">dsconsec</th>
+                                <th class="centered">destinatario</th>
+                                <th class="centered">telefono</th>
+                                <th class="centered">direccion</th>
+                                <th class="centered">estado</th>
+                                <th class="centered">rutadigitalizada</th>
+                                <th class="centered">origen</th>
+                                <th class="centered">destino</th>
+                                <th class="centered">dsreferencia</th>
+                                <th class="centered">dsordencompra</th>
+                                <th class="centered">idagente</th>
+                                <th class="centered">idempresa</th>
+                                <th class="centered">idcliente</th>
+                                <th class="centered">dsfechaentrega</th>
+                                <th class="centered">historicos</th>
+                                <th class="centered">rutave</th>
+                                <th class="centered">type_error</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody_Guias"></tbody>
+                        <tfoot class="thead-dark">
+                            <tr>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalFormulario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detalle del registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="x_content" id="divContenido"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-close"></i>
+                        Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/bootstrap.js"></script>
+    <script src="public/js/jquery.blockUI.js"></script>
+    <script src="public/js/sweetalert2.all.min2021.js"></script>
+    <script src="public/js/system/system.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
